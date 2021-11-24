@@ -1,1 +1,417 @@
+/*--------------- Расположение -------------------*/
+.cont-vert {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.cont-vert-around{
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.cont-vert-around-left{
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  align-items: left;
+}
+.cont-horiz {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cont-horiz-start{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.vhfull{ height:100vh;}
+/*--------------- Объекты -------------------*/
+.mainpage{
+  border-radius: 0;
+  background-color: #fff;
+  width: 446px;
+}
+.box{
+  background-color: #fff;
+  height: 535px;
+  width: 446px;
+  border-radius: 0;
+}
+.box2{
+  background-color: #fff;
+  height: 396px;
+  width: 446px;
+  border-radius: 0;
+}
+
+.phone{
+  height: 56px;
+  width: 336px;
+  left: 552px;
+  top: 318px;
+  background: #FFFFFF;
+  box-shadow: 2px 2px 10px 2px rgba(35, 38, 47, 0.08);
+  border-radius: 12px;
+}
+.phone:hover, .fio:hover{
+  box-shadow: 2px 2px 10px 2px rgba(0, 218, 179, 0.5);
+}
+.phone:active, .fio:active{
+  box-shadow: 2px 2px 10px 2px #FF4A6380;
+}
+.phone-text, .fio-text{
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+}
+.phone-text{
+  line-height: 130%;
+  text-align:center;
+}
+.fio{
+  height: 49px;
+  width: 406px;
+  border-radius: 100px;
+  padding: 13px, 20px, 13px, 20px;
+  border: 1px solid #DDE2ED ;
+}
+.fio-text{
+  line-height: 23px;
+  letter-spacing: 0em;
+  text-align: left;
+  padding-left:30px;
+}
+.sms{
+  height: 72px;
+  width: 72px;
+  left: 0px;
+  top: 0px;
+  margin: 5px;
+  background: #FFFFFF;
+  box-shadow: 2px 2px 10px 2px rgba(35, 38, 47, 0.08);
+  border-radius: 12px;
+  border-color:transparent;
+  padding: 15px, 25px, 15px, 25px;
+
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 130%;
+  color: #C0C5D5;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+input {outline:none; }
+::placeholder {
+  color: #C0C5D5;
+  font-family: Montserrat;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 42px;
+  letter-spacing: 0em;
+  text-align: center;
+} /*цвет текста в поле ввода*/
+.search{
+  width: 335px;
+  height: 58px;
+  background: #FFFFFF;
+  box-shadow: 2px 2px 10px 2px rgba(35, 38, 47, 0.08);
+  border-radius: 100px;
+  outline:none;
+}
+.sms{
+  font-family: Montserrat;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 42px;
+  letter-spacing: 0em;
+  text-align: center;
+
+}
+.sms:hover{
+  border-color:transparent;
+  box-shadow: 2px 2px 10px 2px rgba(0, 218, 179, 0.5);}
+.sms:active{
+  box-shadow: 2px 2px 10px 2px #FF4A6380; }
+.space-1x{
+  height:35px;
+  width:100%;
+}
+.space-2x{
+  height:70px;
+  width:100%;
+}
+.category{
+  /*overflow:hidden*/
+  overflow: auto
+}
+.recommend{
+  height: 268px;
+  width: 128px;
+  margin:10px;
+}
+.recommend-img{
+  height: 128px;
+  width: 128px;
+  border-radius: 0;
+}
+.recommend-info{
+  height: 140px;
+  width: 108px!important;
+  font-family: Montserrat, serif;
+  font-style: normal;
+  letter-spacing: 0;
+  text-align: left;
+  color: #23262F;
+  background: #FFFFFF;
+  box-shadow: 2px 2px 10px 2px rgba(35, 38, 47, 0.08);
+  border-radius: 0;
+  padding:10px;
+}
+.recommend-name{
+  font-weight: bold;
+  font-size: 15px;
+}
+.recommend-date{
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: 0;
+  text-align: left;
+}
+.recommend-adr{
+  font-size: 12px;
+  font-weight: 700;
+}
+.recommend-price{
+  font-weight: bold;
+  font-size: 18px;
+  color: #409B89;
+}
+.btn-recommend1{
+  background: #67C4B2;
+  color: #fff;
+  width: 197px;
+  height: 36px;
+  /* Основные/Дополнительный */
+  background: #67C4B2;
+  box-shadow: 2px 2px 10px 2px rgba(35, 38, 47, 0.08);
+  border-radius: 100px;
+  z-index: 20;
+
+  /* H4 */
+  font-family: Montserrat, serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 130%;
+}
+.btn-recommend2{
+  background-color: #FFFFFF;
+  color:  #23262F;
+  box-shadow: 2px 2px 10px 2px #23262F14;
+  width: 197px;
+  height: 36px;
+  margin-left: -30px;
+  z-index: 10;
+  border-radius: 100px;
+
+  /* Small Text */
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 130%;
+}
+
+/*--------------- Кнопка -------------------*/
+.btn1{
+  background-color:#409B89;
+  color: #fff;
+  height: 50px;
+  width: 344px;
+  border-radius: 100px;
+  padding: 12px, 130px, 12px, 130px;
+}
+.btn1:hover {
+  background-color:#DDE2ED;
+  color:#fff;
+  height: 50px;
+  width: 344px;
+  border-radius: 100px;
+  padding: 12px, 130px, 12px, 130px;
+  margin: 0 5px;
+}
+.btn2{
+  background-color:#409B89;
+  color:#fff;
+  width: 198px;
+  height: 50px;
+  border-radius: 100px;
+  padding: 12px, 130px, 12px, 130px;
+  margin: 0 5px;
+}
+.btn2:hover {
+  background-color:#DDE2ED;
+  color:#fff;
+  height: 50px;
+  width: 198px;
+  left: 517px;
+  top: 468px;
+  border-radius: 100px;
+  padding: 12px, 130px, 12px, 130px;
+  margin: 0 5px;
+}
+.btn3{
+  background-color:#409B89;
+  color:#fff;
+  width: 336px;
+  height: 50px;
+  border-radius: 100px;
+  padding: 12px, 130px, 12px, 130px;
+  margin: 0 5px;
+}
+.btn3:hover {
+  background-color:#DDE2ED;
+  color:#fff;
+  height: 50px;
+  width: 198px;
+  left: 517px;
+  top: 468px;
+  border-radius: 100px;
+  padding: 12px, 130px, 12px, 130px;
+  margin: 0 5px;
+}
+.flag{ padding:20px;}
+.checkbox{
+  background-color: #67C4B2;
+  color: #fff;
+  text-align: center;
+  height: 24px;
+  width: 24px;
+  left: 0;
+  top: 0;
+  border-radius: 6px;
+  margin:5px;
+}
+.v-line{
+  width: 40px;
+  height: 0;
+  left: 80px;
+  top: 8px;
+  /* Основные/Неактивный фон */
+  border: 1px solid #DDE2ED;
+  transform: rotate(90deg);
+}
+/* Полоса прокрутки */
+#element::-webkit-scrollbar {
+  width: 10px;
+  background-color: #f9f9fd;
+}
+
+#element::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #18aaaa;
+}
+
+#element::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.2);
+  border-radius: 10px;
+  background-color: #f9f9fd;
+}
+/*--------------- Типографика -------------------*/
+/* H1 */
+h1 {
+  color:#409B89;
+  font-family: Montserrat, serif;
+  font-style: bold;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 130%;
+  padding:0;
+  margin:0;
+}
+
+/* H2 */
+h2{
+  font-family: Montserrat, serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px;
+  letter-spacing: 0;
+  text-align: center;
+}
+p{
+  font-family: Montserrat, serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0;
+  text-align: left;
+  padding:0;
+  margin:0;
+}
+.hrecent{
+  margin: 0px 10px;
+  font-family: Montserrat, serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: 0;
+  text-align: left;
+}
+a{
+  text-decoration:none;
+  color: #67C4B2;
+}
+.input-text{
+  font-family: Montserrat, serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 23px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.button-text{
+  font-family: Montserrat, serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+/*--------------- Шрифт -------------------*/
+@font-face {
+  font-family: 'Montserrat';
+  src: url('src/assets/Fonts/Montserrat/Montserrat-Regular.eot');
+  src: local('Fonts/Montserrat/Montserrat Regular'), local('Fonts/Montserrat/Montserrat-Regular'),
+  url('src/assets/Fonts/Montserrat/Montserrat-Regular.eot?#iefix') format('embedded-opentype'),
+  url('src/assets/Fonts/Montserrat/Montserrat-Regular.woff') format('woff'),
+  url('src/assets/Fonts/Montserrat/Montserrat-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url('src/assets/Fonts/Montserrat/Montserrat-Bold.eot');
+  src: local('Fonts/Montserrat/Montserrat Bold'), local('Fonts/Montserrat/Montserrat-Bold'),
+  url('src/assets/Fonts/Montserrat/Montserrat-Bold.eot?#iefix') format('embedded-opentype'),
+  url('src/assets/Fonts/Montserrat/Montserrat-Bold.woff') format('woff'),
+  url('src/assets/Fonts/Montserrat/Montserrat-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
 /* You can add global styles to this file, and also import other style files */
