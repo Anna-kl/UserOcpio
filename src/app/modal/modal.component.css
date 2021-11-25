@@ -1,0 +1,11 @@
+
+  /*--------------- Расположение -------------------*/
+.cont-horiz {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.vhfull{ height:100vh;}
+.logo{
+  width: 445px;
+}
