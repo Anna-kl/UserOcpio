@@ -19,7 +19,6 @@ export class ModalNextComponent implements OnInit {
       this.activeModal.close();
       const modalRef = this.modalService.open(ModalRegisterComponent);
       modalRef.componentInstance.name = 'World';
-
   }
 
 }
