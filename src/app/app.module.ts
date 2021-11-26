@@ -9,6 +9,8 @@ import {ModalComponent} from "./modal/modal.component";
 import { ModalNextComponent } from './modal-next/modal-next.component';
 import { ModalRegisterComponent } from './modal-register/modal-register.component';
 import { ModalEnterDataComponent } from './modal-enter-data/modal-enter-data.component';
+import { ModalRegisterNextComponent } from './modal-register-next/modal-register-next.component';
+import { ModalRegisterEndComponent } from './modal-register-end/modal-register-end.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { ModalEnterDataComponent } from './modal-enter-data/modal-enter-data.com
     ModalComponent,
     ModalNextComponent,
     ModalRegisterComponent,
-    ModalEnterDataComponent
+    ModalEnterDataComponent,
+    ModalRegisterNextComponent,
+    ModalRegisterEndComponent
   ],
     imports: [
         BrowserModule,
