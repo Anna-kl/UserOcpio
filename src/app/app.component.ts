@@ -1,7 +1,7 @@
 import {Component, OnInit, ViewChild, ViewContainerRef} from '@angular/core';
 import {ModalManager} from "ngb-modal";
 import {NgbModal} from "@ng-bootstrap/ng-bootstrap";
-import {ModalComponent} from "./modal/modal.component";
+import {ModalComponent} from "./modals/modal/modal.component";
 
 @Component({
   selector: 'app-root',
