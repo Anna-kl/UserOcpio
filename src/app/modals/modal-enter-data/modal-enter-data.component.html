@@ -1,19 +1,24 @@
 <div class="vhfull cont-horiz" style="background: #FAFAFC;">
   <div class="cont-vert-around box2">
     <div style="padding-top:20px;"><h2>Мы отправили СМС код на номер:</h2>
-      <p class="phone-text"> +7 (903) 123-45-67</p> </div>
+      <p class="phone-text">{{ phone }}</p></div>
+     <form [formGroup]="code" (ngSubmit)="onSubmitCode()" >
     <div class="cont-horiz">
-      <input class="sms" type="text" placeholder="0" >
-      <input class="sms" type="text" placeholder="0" >
-      <input class="sms" type="text" placeholder="0" >
-      <input class="sms" type="text" placeholder="0" >
+
+      <input class="sms" id="sms1" type="text" placeholder="0" formControlName="a1" (input)="setCell(0)">
+      <input class="sms" id="sms2" type="text" placeholder="0" formControlName="a2" (input)="setCell(1)">
+      <input class="sms" id="sms3" type="text" placeholder="0" formControlName="a3" (input)="setCell(2)">
+      <input class="sms" id="sms4" type="text" placeholder="0" formControlName="a4" (input)="setCell(3)">
+
     </div>
     <div class="cont-horiz-start">
       <p>Не пришёл код? <span style="color: #67C4B2;"> <a href="#">Прислать повторно</a></span></p>
     </div>
     <div class="cont-horiz">
-      <div class="btn2 button-text cont-vert" (click)="back()">Назад</div>
-      <div class="btn2 button-text cont-vert" (click)="next()">Далее</div>
-    </div>
+      <button class="btn2 button-text cont-vert" (click)="back()" >Назад</button>
+      <button class="btn2 button-text cont-vert" (click)="next()" [disabled]="!checkCode" [style.background-color]="checkCode ? '#409B89' : 'gray'">Далее</button>
+
+  </div>
+     </form>
   </div>
 </div>

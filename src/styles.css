@@ -1,57 +1,92 @@
 /*--------------- Расположение -------------------*/
+@font-face {
+  font-family: 'Montserrat';
+  src: url('assets/fonts/Montserrat/Montserrat-Regular.eot');
+  src: local('Fonts/Montserrat/Montserrat Regular'), local('Fonts/Montserrat/Montserrat-Regular'),
+  url('assets/fonts/Montserrat/Montserrat-Regular.eot?#iefix') format('embedded-opentype'),
+  url('assets/fonts/Montserrat/Montserrat-Regular.woff') format('woff'),
+  url('assets/fonts/Montserrat/Montserrat-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/assets/fonts/Montserrat/Montserrat-Bold.eot');
+  src: local('assets/fonts/Montserrat/Montserrat Bold'), local('src/assets/fonts/Montserrat/Montserrat-Bold'),
+  url('assets/fonts/Montserrat/Montserrat-Bold.eot?#iefix') format('embedded-opentype'),
+  url('assets/fonts/Montserrat/Montserrat-Bold.woff') format('woff'),
+  url('assets/fonts/Montserrat/Montserrat-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+
 .cont-vert {
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
 }
-.cont-vert-around{
+
+.cont-vert-around {
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-around;
   align-items: center;
 }
-.cont-vert-around-left{
+
+.cont-vert-around-left {
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-around;
   align-items: left;
 }
+
 .cont-horiz {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.cont-horiz-start{
+
+.cont-horiz-start {
   display: flex;
   justify-content: start;
   align-items: center;
 }
-.cont-vert-start{
+
+.cont-vert-start {
   display: flex;
   flex-flow: column nowrap;
   align-items: flex-start;
 }
-.vhfull{ height:100vh;}
+
+.vhfull {
+  height: 100vh;
+}
+
 /*--------------- Объекты -------------------*/
-.mainpage{
+.mainpage {
   border-radius: 0px;
   background-color: #fff;
   width: 446px;
 }
-.box{
+
+.box {
   background-color: #fff;
   height: 535px;
   width: 446px;
   border-radius: 0px;
 }
-.box2{
+
+.box2 {
   background-color: #fff;
   height: 396px;
   width: 446px;
   border-radius: 0px;
 }
-.phone{
+
+.phone {
   height: 56px;
   width: 336px;
   left: 552px;
@@ -60,36 +95,43 @@
   box-shadow: 2px 2px 10px 2px rgba(35, 38, 47, 0.08);
   border-radius: 12px;
 }
-.phone:hover, .fio:hover{
+
+.phone:hover, .fio:hover {
   box-shadow: 2px 2px 10px 2px rgba(0, 218, 179, 0.5);
 }
-.phone:active, .fio:active{
+
+.phone:active, .fio:active {
   box-shadow: 2px 2px 10px 2px #FF4A6380;
 }
-.phone-text, .fio-text{
+
+.phone-text, .fio-text {
   font-family: Montserrat;
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
 }
-.phone-text{
+
+.phone-text {
   line-height: 130%;
-  text-align:center;
+  text-align: center;
 }
-.fio{
+
+.fio {
   height: 49px;
   width: 406px;
   border-radius: 100px;
   padding: 13px, 20px, 13px, 20px;
-  border: 1px solid #DDE2ED ;
+  border: 1px solid #DDE2ED;
 }
-.fio-text{
+
+.fio-text {
   line-height: 23px;
   letter-spacing: 0em;
   text-align: left;
-  padding-left:30px;
+  padding-left: 30px;
 }
-.sms{
+
+.sms {
   height: 72px;
   width: 72px;
   left: 0px;
@@ -98,7 +140,7 @@
   background: #FFFFFF;
   box-shadow: 2px 2px 10px 2px rgba(35, 38, 47, 0.08);
   border-radius: 12px;
-  border-color:transparent;
+  border-color: transparent;
   padding: 15px, 25px, 15px, 25px;
 
   font-family: Montserrat;
@@ -112,12 +154,17 @@
   align-items: center;
   text-align: center;
 }
-input {outline:none; }
+
+input {
+  outline: none;
+}
+
 .sms::placeholder {
   font-size: 32px;
   line-height: 42px;
   text-align: center;
 }
+
 .fio::placeholder {
   font-family: Montserrat;
   font-style: normal;
@@ -126,20 +173,23 @@ input {outline:none; }
   line-height: 130%;
   align-items: center;
 }
+
 ::placeholder {
   color: #C0C5D5;
   font-family: Montserrat;
   font-style: normal;
 }
-.search{
+
+.search {
   width: 335px;
   height: 58px;
   background: #FFFFFF;
   box-shadow: 2px 2px 10px 2px rgba(35, 38, 47, 0.08);
   border-radius: 100px;
-  outline:none;
+  outline: none;
 }
-.sms{
+
+.sms {
   font-family: Montserrat;
   font-size: 32px;
   font-style: normal;
@@ -148,36 +198,46 @@ input {outline:none; }
   letter-spacing: 0em;
   text-align: center;
 }
-.sms:hover{
-  border-color:transparent;
-  box-shadow: 2px 2px 10px 2px rgba(0, 218, 179, 0.5);}
-.sms:active{
-  box-shadow: 2px 2px 10px 2px #FF4A6380; }
-.space-1x{
-  height:35px;
-  width:100%;
+
+.sms:hover {
+  border-color: transparent;
+  box-shadow: 2px 2px 10px 2px rgba(0, 218, 179, 0.5);
 }
-.space-2x{
-  height:70px;
-  width:100%;
+
+.sms:active {
+  box-shadow: 2px 2px 10px 2px #FF4A6380;
 }
-.category{
+
+.space-1x {
+  height: 35px;
+  width: 100%;
+}
+
+.space-2x {
+  height: 70px;
+  width: 100%;
+}
+
+.category {
   /*overflow:hidden*/
   overflow: auto
 }
-.recommend{
+
+.recommend {
   height: 268px;
   width: 128px;
-  margin:10px;
+  margin: 10px;
 }
-.recommend-img{
+
+.recommend-img {
   height: 128px;
   width: 128px;
   border-radius: 0px;
 }
-.recommend-info{
+
+.recommend-info {
   height: 140px;
-  width: 108px!important;
+  width: 108px !important;
   font-family: Montserrat;
   font-style: normal;
   letter-spacing: 0em;
@@ -186,28 +246,33 @@ input {outline:none; }
   background: #FFFFFF;
   box-shadow: 2px 2px 10px 2px rgba(35, 38, 47, 0.08);
   border-radius: 0px;
-  padding:10px;
+  padding: 10px;
 }
-.recommend-name{
+
+.recommend-name {
   font-weight: bold;
   font-size: 15px;
 }
-.recommend-date{
+
+.recommend-date {
   font-size: 15px;
   font-weight: 400;
   letter-spacing: 0em;
   text-align: left;
 }
-.recommend-adr{
+
+.recommend-adr {
   font-size: 12px;
   font-weight: 700;
 }
-.recommend-price{
+
+.recommend-price {
   font-weight: bold;
   font-size: 18px;
   color: #409B89;
 }
-.btn-recommend1{
+
+.btn-recommend1 {
   background: #67C4B2;
   color: #fff;
   width: 197px;
@@ -225,9 +290,10 @@ input {outline:none; }
   font-size: 12px;
   line-height: 130%;
 }
-.btn-recommend2{
+
+.btn-recommend2 {
   background-color: #FFFFFF;
-  color:  #23262F;
+  color: #23262F;
   box-shadow: 2px 2px 10px 2px #23262F14;
   width: 197px;
   height: 36px;
@@ -244,35 +310,38 @@ input {outline:none; }
 }
 
 /*--------------- Кнопка -------------------*/
-.btn1{
-  background-color:#409B89;
+.btn1 {
+  background-color: #409B89;
   color: #fff;
   height: 50px;
   width: 344px;
   border-radius: 100px;
   padding: 12px, 130px, 12px, 130px;
 }
+
 .btn1:hover {
-  background-color:#DDE2ED;
-  color:#fff;
+  background-color: #DDE2ED;
+  color: #fff;
   height: 50px;
   width: 344px;
   border-radius: 100px;
   padding: 12px, 130px, 12px, 130px;
   margin: 0 5px;
 }
-.btn2{
-  background-color:#409B89;
-  color:#fff;
+
+.btn2 {
+  background-color: #409B89;
+  color: #fff;
   width: 198px;
   height: 50px;
   border-radius: 100px;
   padding: 12px, 130px, 12px, 130px;
   margin: 0 5px;
 }
+
 .btn2:hover {
-  background-color:#DDE2ED;
-  color:#fff;
+  background-color: #DDE2ED;
+  color: #fff;
   height: 50px;
   width: 198px;
   left: 517px;
@@ -281,18 +350,20 @@ input {outline:none; }
   padding: 12px, 130px, 12px, 130px;
   margin: 0 5px;
 }
-.btn3{
-  background-color:#409B89;
-  color:#fff;
+
+.btn3 {
+  background-color: #409B89;
+  color: #fff;
   width: 336px;
   height: 50px;
   border-radius: 100px;
   padding: 12px, 130px, 12px, 130px;
   margin: 0 5px;
 }
+
 .btn3:hover {
-  background-color:#DDE2ED;
-  color:#fff;
+  background-color: #DDE2ED;
+  color: #fff;
   height: 50px;
   width: 198px;
   left: 517px;
@@ -301,8 +372,12 @@ input {outline:none; }
   padding: 12px, 130px, 12px, 130px;
   margin: 0 5px;
 }
-.flag{ padding:20px;}
-.checkbox{
+
+.flag {
+  padding: 20px;
+}
+
+.checkbox {
   background-color: #67C4B2;
   color: #fff;
   text-align: center;
@@ -311,9 +386,10 @@ input {outline:none; }
   left: 0px;
   top: 0px;
   border-radius: 6px;
-  margin:5px;
+  margin: 5px;
 }
-.v-line{
+
+.v-line {
   width: 40px;
   height: 0px;
   left: 80px;
@@ -322,7 +398,8 @@ input {outline:none; }
   border: 1px solid #DDE2ED;
   transform: rotate(90deg);
 }
-.ico-plus{
+
+.ico-plus {
   margin: 0 20px;
 }
 
@@ -338,25 +415,26 @@ input {outline:none; }
 }
 
 #element::-webkit-scrollbar-track {
-  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.2);
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
   background-color: #f9f9fd;
 }
+
 /*--------------- Типографика -------------------*/
 /* H1 */
 h1 {
-  color:#409B89;
+  color: #409B89;
   font-family: Montserrat;
   font-style: bold;
   font-weight: bold;
   font-size: 24px;
   line-height: 130%;
-  padding:0px;
-  margin:0px;
+  padding: 0px;
+  margin: 0px;
 }
 
 /* H2 */
-h2{
+h2 {
   font-family: Montserrat;
   font-size: 20px;
   font-style: normal;
@@ -365,7 +443,8 @@ h2{
   letter-spacing: 0em;
   text-align: center;
 }
-p{
+
+p {
   font-family: Montserrat;
   font-size: 15px;
   font-style: normal;
@@ -373,10 +452,11 @@ p{
   line-height: 19px;
   letter-spacing: 0em;
   text-align: left;
-  padding:0px;
-  margin:0px;
+  padding: 0px;
+  margin: 0px;
 }
-.hrecent{
+
+.hrecent {
   margin: 0px 10px;
   font-family: Montserrat;
   font-size: 20px;
@@ -386,11 +466,13 @@ p{
   letter-spacing: 0em;
   text-align: left;
 }
-a{
-  text-decoration:none;
+
+a {
+  text-decoration: none;
   color: #67C4B2;
 }
-.input-text{
+
+.input-text {
   font-family: Montserrat;
   font-size: 18px;
   font-style: normal;
@@ -399,7 +481,8 @@ a{
   letter-spacing: 0em;
   text-align: left;
 }
-.button-text{
+
+.button-text {
   font-family: Montserrat;
   font-size: 20px;
   font-style: normal;
@@ -420,6 +503,7 @@ a{
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'Montserrat';
   src: url('src/assets/Fonts/Montserrat/Montserrat-Bold.eot');
@@ -430,4 +514,5 @@ a{
   font-weight: bold;
   font-style: normal;
 }
+
 /* You can add global styles to this file, and also import other style files */

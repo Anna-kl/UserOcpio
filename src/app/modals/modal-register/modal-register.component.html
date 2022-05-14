@@ -1,11 +1,13 @@
 <div class="vhfull cont-horiz" style="background: #FAFAFC;">
   <div class="cont-vert-around box2">
-    <h2>Войдите с помощью  номера телефона</h2>
+    <h2>Войдите с помощью номера телефона</h2>
     <div class="phone cont-horiz-start">
-      <img src="assets/img/flag_rus.png" class="flag">
-      <img src="assets/img/bottom.png">
+      <img src="assets/img/flag_rus.png" class="flag" alt="">
+      <img src="assets/img/bottom.png" alt="">
       <div class="v-line"></div>
-      <div class="input-text">+7  (903) 123-45-67</div>
+      <input class="input-text" [(ngModel)]="phone" (ngModelChange)="getPhone($event)" name="name" placeholder="+7(000)"
+             [style.border-style]="error ? 'solid' : 'none'"
+             [style.border-color]="error ? 'red' : 'none'"/>
     </div>
     <div class="cont-horiz-start">
       <div class="checkbox">✓</div>

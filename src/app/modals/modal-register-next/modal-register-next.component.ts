@@ -1,6 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {NgbActiveModal, NgbModal} from "@ng-bootstrap/ng-bootstrap";
-import {ModalRegisterComponent} from "../modal-register/modal-register.component";
 import {ModalEnterDataComponent} from "../modal-enter-data/modal-enter-data.component";
 import {ModalRegisterEndComponent} from "../modal-register-end/modal-register-end.component";
 
@@ -14,7 +13,8 @@ export class ModalRegisterNextComponent implements OnInit {
   constructor(
     private modalService: NgbModal,
     public activeModal: NgbActiveModal
-  ) { }
+  ) {
+  }
 
 
   ngOnInit(): void {

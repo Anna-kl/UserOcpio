@@ -11,9 +11,13 @@ export class ModalComponent implements OnInit {
   public users: any;
   @ViewChild('myModal') myModal: any;
   private modalRef: any;
-  constructor(public activeModal: NgbActiveModal, private ngZone: NgZone, private modalService: NgbModal) { }
 
-  ngOnInit(): void { }
+  constructor(public activeModal: NgbActiveModal, private ngZone: NgZone, private modalService: NgbModal) {
+  }
+
+  ngOnInit(): void {
+
+  }
 
   close() {
     this.activeModal.close();

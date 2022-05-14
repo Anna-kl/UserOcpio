@@ -1,6 +1,6 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import {ComponentFixture, TestBed} from '@angular/core/testing';
 
-import { ModalRegisterNextComponent } from './modal-register-next.component';
+import {ModalRegisterNextComponent} from './modal-register-next.component';
 
 describe('ModalRegisterNextComponent', () => {
   let component: ModalRegisterNextComponent;
@@ -8,9 +8,9 @@ describe('ModalRegisterNextComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ModalRegisterNextComponent ]
+      declarations: [ModalRegisterNextComponent]
     })
-    .compileComponents();
+      .compileComponents();
   });
 
   beforeEach(() => {

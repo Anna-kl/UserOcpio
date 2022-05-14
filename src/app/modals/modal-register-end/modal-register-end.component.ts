@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {NgbActiveModal, NgbModal} from "@ng-bootstrap/ng-bootstrap";
 
 @Component({
@@ -11,7 +11,8 @@ export class ModalRegisterEndComponent implements OnInit {
   constructor(
     private modalService: NgbModal,
     public activeModal: NgbActiveModal
-  ) { }
+  ) {
+  }
 
 
   ngOnInit(): void {
@@ -19,8 +20,8 @@ export class ModalRegisterEndComponent implements OnInit {
 
   next() {
     this.activeModal.close();
-    const modalRef = this.modalService.open(ModalRegisterEndComponent);
-    modalRef.componentInstance.name = 'World';
+    // const modalRef = this.modalService.open(ModalRegisterEndComponent);
+    // modalRef.componentInstance.name = 'World';
   }
 
 }

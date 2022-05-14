@@ -1,39 +1,44 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import {NgModule} from '@angular/core';
+import {BrowserModule} from '@angular/platform-browser';
 
-import { AppComponent } from './app.component';
+import {AppComponent} from './app.component';
 import {ModalModule} from "ngb-modal";
-import {FormsModule} from "@angular/forms";
-import { AppRoutingModule } from './app-routing.module';
-import {NgbModule} from "@ng-bootstrap/ng-bootstrap";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
+import {AppRoutingModule} from './app-routing.module';
 import {ModalComponent} from "./modals/modal/modal.component";
-import { ModalNextComponent } from './modals/modal-next/modal-next.component';
-import { ModalRegisterComponent } from './modals/modal-register/modal-register.component';
-import { ModalEnterDataComponent } from './modals/modal-enter-data/modal-enter-data.component';
-import { ModalRegisterNextComponent } from './modals/modal-register-next/modal-register-next.component';
-import { ModalRegisterEndComponent } from './modals/modal-register-end/modal-register-end.component';
-import { MainComponent } from './components/main/main.component';
-
+import {MainComponent} from './components/main/main.component';
+import {SlickCarouselModule} from "ngx-slick-carousel";
+import {LogoTenComponent} from "./components/logo/logo.component";
+import {RouterModule} from "@angular/router";
+import {ModalRegisterComponent} from "./modals/modal-register/modal-register.component";
+import {BusEvent} from "@src/app/services/busEvent";
+import {CommonModule} from "@angular/common";
+import {ModalEnterDataComponent} from "@src/app/modals/modal-enter-data/modal-enter-data.component";
+import {HttpClientModule} from "@angular/common/http";
 
 
 @NgModule({
   declarations: [
     AppComponent,
+    MainComponent,
+    LogoTenComponent,
     ModalComponent,
-    ModalNextComponent,
     ModalRegisterComponent,
     ModalEnterDataComponent,
-    ModalRegisterNextComponent,
-    ModalRegisterEndComponent,
-    MainComponent
   ],
-    imports: [
-        BrowserModule,
-        FormsModule,
-        NgbModule,
-        AppRoutingModule
-    ],
-  providers: [],
-  bootstrap: [AppComponent]
+  imports: [
+    BrowserModule,
+    ReactiveFormsModule,
+    HttpClientModule,
+    FormsModule,
+    AppRoutingModule,
+    ModalModule,
+    RouterModule,
+    SlickCarouselModule
+  ],
+  providers: [BusEvent],
+  bootstrap: [AppComponent],
+  entryComponents: [ModalComponent],
 })
-export class AppModule { }
+export class AppModule {
+}

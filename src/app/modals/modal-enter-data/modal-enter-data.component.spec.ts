@@ -1,6 +1,6 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import {ComponentFixture, TestBed} from '@angular/core/testing';
 
-import { ModalEnterDataComponent } from './modal-enter-data.component';
+import {ModalEnterDataComponent} from './modal-enter-data.component';
 
 describe('ModalEnterDataComponent', () => {
   let component: ModalEnterDataComponent;
@@ -8,9 +8,9 @@ describe('ModalEnterDataComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ModalEnterDataComponent ]
+      declarations: [ModalEnterDataComponent]
     })
-    .compileComponents();
+      .compileComponents();
   });
 
   beforeEach(() => {
